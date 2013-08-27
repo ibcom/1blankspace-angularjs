@@ -13,11 +13,30 @@ var ns1blankspaceConfig = function($routeProvider)
 			controller: 'HomeController',
 			template: '/jscripts/angularjs/1blankspace.home-1.0.0.html'
 		})
-		.when('/contactPerson/:id',
+		.when('/show/:object/:id',
 		{
 			controller: 'ContactPersonController',
 			template: '/jscripts/angularjs/1blankspace.contactPerson-1.0.0.html'
 		});
+
+	$scope.objects =
+	[
+		{
+			name: 'contactPerson',
+			title: 'Contact Person'
+		},
+		{
+			name: 'contactBusiness',
+			title: 'Contact Business'
+		}
+	]	
 }
 
 var ns1blankspace = angular.module('ns1blankspace', []).config(ns1blankspaceConfig);
+
+//DIRECTIVES
+
+//Attachements
+//Search
+//Edit button
+//Save button
