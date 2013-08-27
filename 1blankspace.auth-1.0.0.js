@@ -1,7 +1,7 @@
-ns1blankspace.controller('ContactPersonController', function ($scope, $location, $routeParams, ContactPersonModel)
+ns1blankspace.controller('AuthController', function ($scope, $location, $routeParams)
 {
-	//ContactPersonModel is linked via Dependency Injection
+	//AuthModel is linked via Dependency Injection
 
-	$scope.objectContext = $routeParams.id;
-	$scope.contactPerson = ContactPersonModel.search();
+	//$scope.user = ;
+	//Use $http direct or via view-model?
 }
