@@ -3,7 +3,10 @@
 	<head>
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
 		<script src="/jscripts/angularjs/1blankspace-1.0.0.js"></script>
-		<script src="/jscripts/angularjs/1blankspaceModel-1.0.0.js"></script>
+		<script src="/jscripts/angularjs/1blankspace.auth-1.0.0.js"></script>
+		<script src="/jscripts/angularjs/1blankspace.home-1.0.0.js"></script>
+		<script src="/jscripts/angularjs/1blankspace.contactPerson-1.0.0.js"></script>
+		<script src="/jscripts/angularjs/1blankspace.contactPerson.model-1.0.0.js"></script>
 		<link rel='stylesheet' href='/jscripts/angularjs/1blankspace.css'>
 		<title>1blankspace AngularJS</title>
 	</head>
@@ -11,7 +14,8 @@
 	<body>
 		<h1>1blankspace AngularJS Example App</h1>
 		<div ng-view>
-
+			if $scope.user == undefined / show logon
+			else show home
 		</div>	
 	</body>	
 </html>
