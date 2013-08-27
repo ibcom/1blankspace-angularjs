@@ -14,9 +14,9 @@
 	<body>
 		<h1>1blankspace AngularJS Example App</h1>
 		<div ng-view>
-			<div class="animate-switch-container" ng-switch on="user.id">
-		         <div ns1blankspace-auth ng-switch-when=""></div>
-		         <div ns1blankspace-home ng-switch-default></div>
+			<div class="animate-switch-container" ng-switch on="user.status">
+		         <div ng-switch-when="">loading...</div>
+		         <div ns1blankspace-auth ng-switch-when="ER"></div>
 		    </div>
 		</div>	
 	</body>	
