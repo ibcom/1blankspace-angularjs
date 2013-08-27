@@ -1,6 +1,7 @@
 ns1blankspace.service('ContactPersonModel', function ()
 {
-	//Service will become provider
+	//Service will become provider eventually
+	//Service is just adding function to namespace
 	//Ignoring iID at moment
 	//view-model
 	
@@ -9,6 +10,7 @@ ns1blankspace.service('ContactPersonModel', function ()
 		return 
 		[
 			{
+				id: 1,
 				firstname: 'John',
 				surname: 'Smith',
 				email: 'john@email.com'
