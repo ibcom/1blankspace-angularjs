@@ -1,4 +1,4 @@
-ns1blankspace.service('ns1blankspaceModel', function ()
+ns1blankspace.service('ns1blankspaceCoreModel', function ()
 {
 	//Service will become provider eventually
 	//Service is just adding function to namespace

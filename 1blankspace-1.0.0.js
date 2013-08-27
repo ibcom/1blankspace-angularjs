@@ -1,42 +1,66 @@
-//Public Interfaces
+//ROUTES (Public Interfaces)
 
 var ns1blankspaceConfig = function($routeProvider)
 {
 	$routeProvider
 		.when('/',
 		{
-			controller: 'AuthController',
-			template: '/jscripts/angularjs/1blankspace-1.0.0.html'
+			controller: 'CoreController',
+			template: '/1blankspace-1.0.0.html'
 		})
 		.when('/home',
 		{
 			controller: 'HomeController',
-			template: '/jscripts/angularjs/1blankspace.home-1.0.0.html'
+			template: '/1blankspace.home-1.0.0.html'
 		})
 		.when('/show/contactPerson/:id',
 		{
 			controller: 'ContactPersonController',
-			template: '/jscripts/angularjs/1blankspace.contactPerson.show-1.0.0.html'
+			template: '/1blankspace.contactPerson.show-1.0.0.html'
 		});
-
-	$scope.objects =
-	[
-		{
-			name: 'contactPerson',
-			title: 'Contact Person'
-		},
-		{
-			name: 'contactBusiness',
-			title: 'Contact Business'
-		}
-	]	
 }
 
 var ns1blankspace = angular.module('ns1blankspace', []).config(ns1blankspaceConfig);
 
+//CONTROLLER
+
+ns1blankspace.controller('CoreController', function ($scope, $location, $routeParams)
+{
+	
+}
+
 //DIRECTIVES
 
-//Attachements
+ns1blankspace.directive('ns1blankspaceAuth', function ()
+{
+	return 
+	{
+		restrict: 'A',
+		templateUrl: '/1blankspace.attachments.auth-1.0.0.html',
+		controller: 'AuthController',
+		scope:
+		{
+			logonName: '= ',
+			logonPassword: '= '
+		}
+	}
+}
+
+ns1blankspace.directive('ns1blankspaceAttachments', function ()
+{
+	return 
+	{
+		restrict: 'A',
+		templateUrl: '/1blankspace.attachments.show-1.0.0.html',
+		controller: 'AttachmentsController',
+		scope:
+		{
+			object: '@object',
+			objectContext: '@objectContext'
+		}
+	}
+}
+
 //Search
-//Edit button
-//Save button
+//Edit
+//Save

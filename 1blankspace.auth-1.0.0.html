@@ -1,10 +1,10 @@
 <form name='auth'>
 
 <label for='logonName'>Logon Name</label>
-<input type='text' id='logonName' ng-model='auth.logonName' ng-minlength="1">
+<input type='text' id='logonName' ng-model='logonName' ng-minlength="1">
 
 <label for='surname'>Password</label>
-<input type='password' id='logonPassword' name='logonPassword' ng-model='auth.logonPassword' ng-required="true" ng-minlength="1">
+<input type='password' id='logonPassword' name='logonPassword' ng-model='logonPassword' ng-required="true" ng-minlength="1">
 
 <span class="error" ng-show="editContacPerson.surname.$error.inlength">
        No Password!</span>
