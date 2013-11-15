@@ -1,4 +1,4 @@
-ns1blankspace.controller('AuthController', function ($scope, $location, $routeParams, ns1blankspaceAuthModel)
+ns1blankspace.controller('AuthController', function ($scope, $location, $routeParams)
 {
 	//AuthModel is linked via Dependency Injection
 
