@@ -36,10 +36,9 @@ ns1blankspace.controller('CoreController', function ($scope, $location, $routePa
 
 ns1blankspace.directive('ns1blankspaceAuth', function ()
 {
-	return 
-	{
-		"restrict": 'A',
-		"templateUrl": '/1blankspace.attachments.auth-1.0.0.html',
+	return {
+		restrict: 'A',
+		templateUrl: '/1blankspace.attachments.auth-1.0.0.html',
 		controller: 'AuthController',
 		scope:
 		{
@@ -51,8 +50,7 @@ ns1blankspace.directive('ns1blankspaceAuth', function ()
 
 ns1blankspace.directive('ns1blankspaceAttachments', function ()
 {
-	return 
-	{
+	return {
 		restrict: 'A',
 		templateUrl: '/1blankspace.attachments.show-1.0.0.html',
 		controller: 'AttachmentsController',
