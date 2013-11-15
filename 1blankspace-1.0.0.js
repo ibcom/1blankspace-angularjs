@@ -24,7 +24,6 @@ var ns1blankspace = angular.module('ns1blankspace', []).config(ns1blankspaceConf
 
 ns1blankspace.controller('CoreController', function ($scope, $location, $routeParams, ns1blankspaceAuthModel)
 {
-/*
   ns1blankspaceAuthModel.user.get().then(function(data)
   {
   		$scope.user = data;
@@ -33,7 +32,6 @@ ns1blankspace.controller('CoreController', function ($scope, $location, $routePa
   			$location.path('/home');
   		}
   });
-*/
 });
 
 ns1blankspace.directive('ns1blankspaceAuth', function ()
