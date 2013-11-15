@@ -22,4 +22,4 @@ ns1blankspace.service('ns1blankspaceCoreModel', function ()
 					]	
 				}
 	}			
-}
+});

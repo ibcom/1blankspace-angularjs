@@ -32,7 +32,7 @@ ns1blankspace.controller('CoreController', function ($scope, $location, $routePa
   			$location.path('/home');
   		}
   });
-}
+});
 
 ns1blankspace.directive('ns1blankspaceAuth', function ()
 {
@@ -47,7 +47,7 @@ ns1blankspace.directive('ns1blankspaceAuth', function ()
 			logonPassword: '= '
 		}
 	}
-}
+});
 
 ns1blankspace.directive('ns1blankspaceAttachments', function ()
 {
@@ -62,7 +62,7 @@ ns1blankspace.directive('ns1blankspaceAttachments', function ()
 			objectContext: '@objectContext'
 		}
 	}
-}
+});
 
 //Search
 //Edit

@@ -5,5 +5,4 @@ ns1blankspace.controller('AuthController', function ($scope, $location, $routePa
 	//$scope.user = ;
 	//Use $http direct or via view-model?
 
-	
-}
+});

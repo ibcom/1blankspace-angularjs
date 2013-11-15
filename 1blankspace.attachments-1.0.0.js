@@ -8,4 +8,4 @@ ns1blankspace.controller('AttachmentsController', function ($scope, $location, $
 	var iObject = $scope.object;
 	var iObjectContext = $scope.objectContext;
 
-}
+});

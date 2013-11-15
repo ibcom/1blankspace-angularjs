@@ -30,4 +30,4 @@ ns1blankspace.provider('ContactPersonModel', function ()
 			}
 		}
 	}	
-}
+});
