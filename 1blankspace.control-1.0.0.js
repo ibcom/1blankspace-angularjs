@@ -1,4 +1,4 @@
-ns1blankspace.controller('CoreController', function ($scope, $location, $routeParams)
+ns1blankspace.controller('CoreController', function ($scope, $location, $routeParams, ns1blankspaceAuthModel)
 {
 /*
   ns1blankspaceAuthModel.user.get().then(function(data)
