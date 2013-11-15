@@ -14,20 +14,19 @@ ns1blankspace.provider('ContactPersonModel', function ()
 
 	this.$get = function ()
 	{
-		return
-		{
-			search: function (iID)
-			{
-				return 
-				[
+		return	{
+					search: function (iID)
 					{
-						id: 1,
-						firstname: 'John',
-						surname: 'Smith',
-						email: 'john@email.com'
+						return 
+						[
+							{
+								id: 1,
+								firstname: 'John',
+								surname: 'Smith',
+								email: 'john@email.com'
+							}
+						]
 					}
-				]
-			}
-		}
+				}	
 	}	
 });

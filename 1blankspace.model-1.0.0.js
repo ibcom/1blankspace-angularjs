@@ -9,17 +9,16 @@ ns1blankspace.service('ns1blankspaceCoreModel', function ()
 	{
 		get: 	function (iID)
 				{
-					return 
-					[
-						{
-							name: 'contactPerson',
-							title: 'Contact Person'
-						},
-						{
-							name: 'contactBusiness',
-							title: 'Contact Business'
-						}
-					]	
+					return 	[
+								{
+									name: 'contactPerson',
+									title: 'Contact Person'
+								},
+								{
+									name: 'contactBusiness',
+									title: 'Contact Business'
+								}
+							]	
 				}
 	}			
 });
