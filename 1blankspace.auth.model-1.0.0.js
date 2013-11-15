@@ -17,5 +17,5 @@ ns1blankspace.factory('ns1blankspaceAuthModel', function ($http)
 							}
 				}			
 			}
-}
+});
 
