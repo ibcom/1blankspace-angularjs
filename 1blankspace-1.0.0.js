@@ -38,8 +38,8 @@ ns1blankspace.directive('ns1blankspaceAuth', function ()
 {
 	return 
 	{
-		restrict: 'A',
-		templateUrl: '/1blankspace.attachments.auth-1.0.0.html',
+		"restrict": 'A',
+		"templateUrl": '/1blankspace.attachments.auth-1.0.0.html',
 		controller: 'AuthController',
 		scope:
 		{
