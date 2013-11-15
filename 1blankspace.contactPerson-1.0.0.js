@@ -4,4 +4,4 @@ ns1blankspace.controller('ContactPersonController', function ($scope, $location,
 
 	$scope.objectContext = $routeParams.id;
 	$scope.contactPerson = ContactPersonModel.search();
-}
+});
