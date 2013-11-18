@@ -3,11 +3,6 @@
 var ns1blankspaceConfig = function($routeProvider)
 {
 	$routeProvider
-		.when('/',
-		{
-			controller: 'CoreController',
-			template: '/1blankspace-1.0.0.html'
-		})
 		.when('/home',
 		{
 			controller: 'HomeController',
